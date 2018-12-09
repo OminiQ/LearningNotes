@@ -1,0 +1,6 @@
+@import url(26_1css.css);
+#test1{
+	width: 200px;
+	height: 200px;
+	background: green;
+}

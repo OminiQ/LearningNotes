@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布局</title>
+<style>
+	#container{
+		width: 1002px;
+		background: gray;
+	}
+
+	#header{
+		height: 120px;
+		background: orange;
+	}
+
+	#main{
+		height: 600px;
+		background: green;
+	}
+
+	#lside{
+		width: 700px;
+		height: 600px;
+		background: pink;
+		float: left;
+	}
+
+	.four{
+		width: 330px;
+		height: 280px;
+		background: green;
+		float: left;
+		margin: 10px;
+	}
+
+	#rside{
+		width: 302px;
+		height: 600px;
+		background: purple;
+		float: right;
+	}
+
+	#footer{
+		height: 120px;
+		background: blue;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="main">
+			<div id="lside">
+				<div class="four"></div>
+				<div class="four"></div>
+				<div class="four"></div>
+				<div class="four"></div>
+			</div>
+			<div id="rside"></div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
