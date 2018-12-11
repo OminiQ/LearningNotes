@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a标签伪类</title>
+<style>
+	a{
+		color: gray;
+		/*可写作a:link*/
+	}
+
+	a:visited{
+		color: purple;
+		/*点击过后*/
+	}
+	a:hover{
+		color: orange;
+		/*鼠标放上去*/
+	}
+
+	a:active{
+		color: red;
+		/*鼠标点击时，一般不写*/
+	}
+
+
+</style>
+</head>
+<body>
+	<div>
+		css允许我们针对a标签4种状态设置各自的css特性
+		1，顺序lvha,不可改变
+		2，active可不写
+		2，a:link可简写
+	</div>
+	<div>
+		<a href="#">链空接</a>
+		<a href="#">链空接</a>
+		<a href="#">链空接</a>
+		<a href="#">链空接</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	#test1{
+		width: 300px;
+		height: 300px;
+		background: pink;
+	}
+
+	p{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#p1{
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		top: 20px;
+		left: 20px;
+		z-index: 100;
+
+	}
+
+	#p2{
+		width: 100px;
+		height: 100px;
+		background: blue;
+		position: relative;
+		bottom: 150px;
+		right: 20px;
+	}
+
+	#test2{
+		width: 300px;
+		height: 300px;
+		background: gray;
+		position: relative;
+	}
+
+	#p3{
+		width: 100px;
+		height: 100px;
+		background: orange;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 100;
+	}
+
+	#p4{
+		width: 100px;
+		height: 100px;
+		background: purple;
+		position: absolute;
+		top: 50px;
+		left: 40px;
+		z-index: 99;
+	}
+</style>
+</head>
+<body>
+	<div id="test1">
+		//...........色块不能占我的位置...........//
+		<p id="p1">相对定位是指元素在自己原来位置，移动像素</p>
+		<p id="p2">相对定位是指元素在自己原来位置，移动像素</p>
+	</div>
+	<div id="test2">
+		绝对定位时，父元素要求有position属性，否则将依据父父....body元素<br>
+		那个父父元素有position属性，相对那个元素，如果都没有，相对于body。
+		<p id="p3">我要绝对定位，相对与父元素的四个方向移动</p>
+		<p id="p4"></p>
+	</div>
+</body>
+</html>

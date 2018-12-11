@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<h1>用户注册</h1>
+	</div>
+	<form action="https://www.baidu.com" method="post">
+		<p>
+			用户名（默认里斯）：<input type="text" name="username" value="里斯">
+		</p>
+		<p>
+			密码：<input type="password" name="password">
+		</p>
+		<p>
+			性别(默认男）：男<input type="radio" name="xingbie" value="男" checked="checked">
+			     女<input type="radio" name="xingbie" value="女">
+		</p>
+		<p>
+			爱好：篮球<input type="checkbox" name="hobby" value="篮球">
+			     足球<input type="checkbox" name="hobby" value="足球">
+			     台球<input type="checkbox" name="hobby" value="台球">
+			     (默认）混球<input type="checkbox" name="hobby" value="浑球" checked="checked">
+		</p>
+		<p>
+			学历：<select name="xueli" id="">
+				<option value="大学">大学</option>
+				<option value="高中">高中</option>
+				<option value="初中" selected="selected">初中(默认)</option>
+				<option value="小学">小学</option>
+			</select>
+		</p>
+		<p>
+			<textarea name="grjj" id="" cols="30" rows="10">个人简介</textarea>
+		</p>
+		<p>
+			上次头像：<input type="file" name="picture">
+		</p>
+		<p>
+			隐藏域：<input type="hidden" name="ip" value="192.168.1.1">
+		</p>
+		<p>
+			<input type="submit" value="提交">
+		</p>
+	</form>
+</body>
+</html>
