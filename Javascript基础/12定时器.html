@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./bom.jpg" alt="">
+    <!---->
+</body>
+<script>
+    function bom(){
+        var img = document.getElementsByTagName('img')[0];
+        img.src = './warn.jpg';
+    }
+    window.setTimeout('bom()', 3000);
+    //window.setInterval('语句' , 毫秒); 每经过N毫秒执行语句 
+</script>
+</html>

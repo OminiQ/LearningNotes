@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <div>
+        <img src="./t1.jpg" alt="" style="height:400px;width:400px;"id="big">
+    </div>
+    <img src="./t1.jpg" alt="" onmouseover="change('t1')" id="h1">
+    <img src="./t2.jpg" alt="" onmouseover="change('t2')" id="h2">
+    <img src="./t3.jpg" alt="" onmouseover="change('t3')" id="h3">
+</body>
+<script>
+    var img = document.getElementById('big');
+    function change(test){
+        if (test == 't1' ) {
+            img.src = './t1.jpg';
+        }else if (test == 't2') {
+            img.src = './t2.jpg';
+        }else if(test == 't3'){
+            img.src = './t3.jpg';
+        }
+    }
+</script>
+</html>

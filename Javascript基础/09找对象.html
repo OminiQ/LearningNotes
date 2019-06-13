@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>关键是找对象</h1>    
+        <div id="test1">        
+            <p></p>        
+            <p></p>        
+            <p></p>    
+        </div>    
+        <div class="test2"></div>    
+        <input type="text" name="username" id="" value="poly" /> 
+    
+</body>
+<script>    
+    // 按id找    
+    alert(document.getElementById('test1'));
+    // 按标签找,div,p,input,....,哪怕只找到1个,也包装成"数组"来返回的    
+    var h1s = document.getElementsByTagName('h1');    
+    console.log(h1s);    
+    console.log(h1s[0]); 
+</script>
+    
+</html>

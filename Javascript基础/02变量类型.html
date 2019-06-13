@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //数值,字符串,布尔,null,undefined,数组,对象
+    var a = 3;
+    var b = 3.14;//数值,因为js引擎的内部,无论整型还是浮点型底层都是用浮点型来存储的
+    console.log(b);//输出到控制台
+    console.log(typeof (a));
+    console.log(typeof b);
+
+    var c = 'hello';
+    var d = 'world';//字符串
+    console.log(c + d);
+    console.log(typeof (c + d));
+
+    var e = true;
+    //var f = FALSE;//布尔；要求全小写
+    console.log(e);
+    console.log(typeof e);
+
+    var f = ['赵', '钱', '孙', '李'];
+    console.log(f);//数组
+    console.log(f[1]);
+
+    var g = {name:'lisi',age:'23'};
+    console.log(g);//对象
+    console.log(g.name);
+    console.log(g['name']);
+
+    /*console.log(typeof f);
+    console.log(typeof g);数组和对象的类型都为object*/
+</script>
+</html>

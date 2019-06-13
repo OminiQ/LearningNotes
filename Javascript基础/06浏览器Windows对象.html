@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*js操作window 对象,就是在影响窗口 但是这个对象较大,为了方便操作,又细分为几个子对象 
+    地址栏,浏览历史,窗口的宽高等 最为核心的是内容,就是html代码->DOM对象 窗口对象BOM对象
+    js的最主要功能就是操纵这两个模型里面的东西 bom是代表浏览器，dom是代表一个网页文档。 
+    bom的属性方法用于操纵浏览器，dom的属性方法用于操纵网页元素和css。
+    注: window对象是浏览器宿主对象,和JS语言无关,*/
+    window.alert('请你不要离开我');
+    window.confirm('你确定要离开我吗');
+    window.open('./05对象操作.html', '_blank');
+
+    //window子对象lacation
+    console.log(window.location);
+    //修改地址
+    window.location.href='http://www.baidu.com';
+    //document HTML文档对象 即HTML代码形成的对象,操作此对象,可动态的改变页面的内容. 是我们做JS的主战场.
+
+
+</script>
+</html>

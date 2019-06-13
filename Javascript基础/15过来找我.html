@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./mv.jpg" alt="美女" onmouseover="on()" onmouseout="ou()">
+</body>
+<script>
+    var img = document.getElementsByTagName('img')[0];
+    function on(){
+        img.src = './lyf.jpg';
+    }
+    function ou(){
+        img.src = './mv.jpg';
+    }
+</script>
+</html>

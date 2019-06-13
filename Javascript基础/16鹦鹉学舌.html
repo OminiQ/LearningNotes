@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>鹦鹉学舌</h1>
+    原话：<input type="text" oninput="test()"><br>
+    学习：<input type="text">
+</body>
+<script>
+    var inp = document.getElementsByTagName('input');
+    function test(){
+        inp[1].value = inp[0].value;
+    }
+</script>
+</html>

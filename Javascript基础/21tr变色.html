@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <table border="1px;">
+        <tr onmouseover="t('t1')">
+            <td>title1</td>
+            <td>title2</td>
+            <td>title3</td>
+            <td>title4</td>   
+        </tr>
+        <tr onmouseover="t('t2')">
+            <td>text1</td>
+            <td>text2</td>
+            <td>text3</td>
+            <td>text4</td>
+        </tr>
+        <tr onmouseover="t('t3')">
+            <td>test1</td>
+            <td>test2</td>
+            <td>test3</td>
+            <td>test4</td>
+        </tr>
+    </table>
+    </center>
+</body>
+<script>
+    var tr = document.getElementsByTagName('tr');
+    function t(test){
+        if (test == 't1') {
+            tr[0].style.background = 'red';
+            tr[1].style.background = 'white';
+            tr[2].style.background = 'white';
+        }else if (test == 't2') {
+            tr[0].style.background = 'white';
+            tr[1].style.background = 'red';
+            tr[2].style.background = 'white';
+        }else if (test == 't3') {
+            tr[0].style.background = 'white';
+            tr[1].style.background = 'white';
+            tr[2].style.background = 'red';
+        }
+    }
+</script>
+</html>

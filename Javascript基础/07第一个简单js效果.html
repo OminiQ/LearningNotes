@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    #t1{
+        height: 200px;
+        width: 200px;
+        background: red;
+    }
+
+    #t2{
+        height: 200px;
+        width: 200px;
+        background: blue;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="t1" onclick="change()"></div>
+</body>
+<script>
+    function change() {
+        var div = document.getElementById('t1');//通过id 找到这个对象
+        /*if (div.id = 't1') {
+            div.id = 't2';
+        }else{
+            div.id = 't1';
+        }*/
+        div.id = 't2';
+        //var div = document.getElementById('t2');
+        //div.id = 't1';
+    }
+    //找到dom对象,操作dom对象 
+</script>
+</html>

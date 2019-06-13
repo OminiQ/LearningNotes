@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="大" onclick="d()">
+    <input type="button" value="中" onclick="z()">
+    <input type="button" value="小" onclick="x()">
+    <p>
+    轻轻的我走了，<br>
+    正如我轻轻的来；<br>
+    我轻轻的招手，<br>
+    作别西天的云彩。<br>
+    </p>
+</body>
+<script>
+    function d(){
+        var p = document.getElementsByTagName('p')[0];
+        p.style.fontSize = "25px";
+    }
+    function z(){
+        var p = document.getElementsByTagName('p')[0];
+        p.style.fontSize = "20px";
+    }
+    function x(){
+        var p = document.getElementsByTagName('p')[0];
+        p.style.fontSize = "15px";
+    }
+</script>
+</html>

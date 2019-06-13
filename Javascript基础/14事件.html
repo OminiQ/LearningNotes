@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <li>onclick 元素点击时</li>
+    <li>onmouseover 鼠标经过时</li>
+    <li>onmouseout 鼠标离开时</li>
+    <li>oninput input内容变化时触发[HTML5新增的,IE9及以上才能用]</li>
+    </ul>
+    <input type="text" onmouseover="test1()" onmouseout="test2()" oninput="test3()">
+</body>
+<script>
+    var inp = document.getElementsByTagName('input');
+    function test1(){
+        inp[0].style.border = '3px solid green';
+    }
+    function test2(){
+        inp[0].style.border = '3px solid blue';
+    }
+    function test3(){
+        inp[0].style.border = '3px solid red';
+    }
+</script>
+</html>
