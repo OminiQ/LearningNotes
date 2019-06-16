@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    div ul{
+        border: 1px solid blue;/*后代选择器，div下所有ul*/
+    }
+    div>ul{
+        border: 2px solid red;/*子元素选择器，div下的子元素*/
+    }
+    div + p{
+        border: 1px solid purple;/*相连元素选择器，div相连的p*/
+    }
+    div ~ p{
+        border: 1px solid pink;/*兄弟选择器，div同级别的p*/
+    }
+    input[name]{
+        background: pink;
+    }
+    input[name='content']{
+        background: purple;/*属性选择器，选择标签属性*/
+    }
+</style>
+</head>
+<body>
+    <h1>层级选择器</h1>
+    <div>
+        <ul>
+            <li>第一层</li>
+            <li>
+                <ul>
+                    <li>春</li>
+                    <li>夏</li>
+                    <li>秋</li>
+                    <li>冬</li>
+                </ul>
+            </li>
+            <li>变换</li>
+        </ul>
+    </div>
+    <p>第一章</p>
+    <span><p>span下的p</p></span>
+    <p>last p</p>
+    <h1>属性选择器</h1>
+    <form action="">
+        用户名：<input type="text" name="username"><br>
+        内容：<input type="text" name="content">
+    </form>
+    <h1>伪类选择器</h1>
+    <dl>
+        <dt>test</dt>
+        <dd>1</dd>
+        <dd>2</dd>
+        <dd>3</dd>
+    </dl>
+</body>
+</html>

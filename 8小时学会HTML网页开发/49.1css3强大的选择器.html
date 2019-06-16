@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    li:first-child{
+        border: 1px solid red;
+    }
+    li:last-child{
+        border:1px solid orange;/*不起作用因为最后一个是p*/
+    }
+    li:nth-child(3){
+        border: 1px solid black;/*伪类选择器，li父元素的第几个元素*/
+    }
+
+    p::before{
+        content: '♥';
+    }
+    p::after{
+        content: '😀';/*伪造一个对象，添加内容*/
+    }
+</style>
+</head>
+<body>
+    <h1>伪类选择器</h1>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <p>12212</p>
+        <p>13123</p>
+        <p>12313</p>
+    </ul>
+    <h1>伪对象选择器</h1>
+    <p>我爱你中国</p>
+    <p>我爱你中国</p>
+    <p>我爱你中国</p>
+</body>
+</html>

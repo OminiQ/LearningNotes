@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/html5/initialize.css">
+    <link rel="stylesheet" href="./css/html5/nav.css">
+    <link rel="stylesheet" href="./css/html5/lside.css">
+    <link rel="stylesheet" href="./css/html5/rside.css">
+<style>
+    body{
+        background: #efefef;
+    }
+    header div{
+        height: 76px;
+        width: 1100px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    header div h2{
+        font: bold 45px/54px '宋体', '新宋',serif;
+    }
+    header div p{
+        font: 15px/22.5px '宋体', '新宋',serif;
+        color: rgb(153,153,153);
+    }
+    header{
+        background: white;
+    }
+    nav{
+        height: 60px;
+        background: #222222;
+    }
+    #main{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    #main::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #lside{
+        width:805px;
+        float: left;
+    }
+    article:first-child{
+        margin-top: 20px;
+    }
+    #rside{
+        width: 275px;
+        float: right;
+    }
+    aside:first-child{
+        margin-top: 20px;
+    }
+    footer{
+        height: 65px;
+        background: #222222;
+        font: 17px/65px '微软雅黑', '黑体',sans-serif;
+        color: white;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>桃白白的博客</h2>
+            <p>洞洞波攻击</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li id="firstli"><a href="#">导航</a></li>
+            <li><a href="#">导航</a></li>
+            <li><a href="#">导航</a></li>
+            <li><a href="#">导航</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="lside">
+            <article>
+                <h2><a href="#">被风吹走</a></h2>
+                <div>
+                    <span>
+                        <time>2019.6.13</time>
+                    </span>
+                    by <span><a href="#">费尔南多•佩索</a></span>
+                    <span>
+                        <a href="#">闲笔随谈</a>
+                        <a href="#">评论</a>
+                    </span>
+                </div>
+                <p>
+                    今天早晨我出门很早，<br>
+                    因为我醒得更早，<br>
+                    我没有任何要做的事情。<br>
+                    我不知道去哪条路，<br>
+                    可是风猛烈地吹向一侧，<br>
+                    我的生活也总是如此，我也想要它总是如此——<br>
+                    我走向风挟带着我而又不需要我去思考的地方<br>                       
+                </p>
+            </article>
+            <article>
+                <h2><a href="#">睡梦中我</a></h2>
+                <div>
+                    <span>
+                        <time>2019.6.13</time>
+                    </span>
+                    by <span><a href="#">费尔南多•佩索</a></span>
+                    <span>
+                        <a href="#">闲笔随谈</a>
+                        <a href="#">评论</a>
+                    </span>
+                </div>
+                <p>
+                    睡梦中我也在守望…<br>
+                    让我入梦，让我离开…<br>
+                    冲着你快乐地微笑 <br>
+                    我自身一无所有。我渴望你<br>
+                    不是为爱情，是为了梦。<br>
+                    你安详的肉体扑灭了<br>
+                    我热切的凝望。<br>
+                    我的渴望悲痛交叠 <br>
+                    我不愿把梦中的你的存在<br>
+                    安置在我的怀中。<br>
+                    睡，睡，睡，<br>
+                    凝神于你的微笑…<br>
+                    我如这梦如此心醉神迷<br>
+                    而且不带感情。  <br>                       
+                </p>
+            </article>
+            <div id="page">
+                pages：
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">next</a>
+            </div>
+        </div>
+        <div id="rside">
+            <aside>
+                <form action="#">
+                    <input type="search" placeholder="search">
+                </form>
+            </aside>
+            <aside>
+                <h4>分类目录</h4>
+                <ul>
+                    <li><a href="#">目录</a>&nbsp;(2)</li>
+                    <li><a href="#">目录2</a></li>
+                    <li><a href="#">目录3</a></li>
+                    <li><a href="#">目录4</a></li>
+                    <li><a href="#">目录5</a></li>
+                </ul>
+            </aside>
+            <aside>
+                <h4>分类目录</h4>
+                <ul>
+                    <li><a href="#">目录1</a></li>
+                    <li><a href="#">目录2</a></li>
+                    <li><a href="#">目录3</a></li>
+                    <li><a href="#">目录4</a></li>
+                    <li><a href="#">目录5</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2019 桃白白的Blog. Powered by Hexo. Theme by Cho.
+    </footer>
+</body>
+</html>

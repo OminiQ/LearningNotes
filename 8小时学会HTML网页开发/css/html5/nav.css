@@ -1,0 +1,24 @@
+nav ul{
+    height: 60px;
+    width: 1100px;
+    margin: 0 auto;
+}
+nav ul li{
+    float: left;
+    height: 60px;
+    width: 70px;
+    text-align: center;
+}
+#firstli{
+    background: #3f3f3f;
+}
+nav ul li a{
+    color: white;
+    font: 15px/60px '微软雅黑', '黑体', 'sans-serif';
+}
+nav ul li a:hover{
+    display: block;
+    background: #3f3f3f;
+    height: 60px;
+    width: 70px;
+}
